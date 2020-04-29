@@ -3,9 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mission to Mars</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 </head>
 <body>
+    <div class="container">
+
+        <div class="jumbotron text-center">
+          <h1>Mission to Mars</h1>
+          <p><a class="btn btn-primary btn-lg" href="/scrape" role="button">Scrape new Data!</a></p>
+        </div>
+    
+        <!-- Mars Scraped information -->
+        <div class="row">
+          <div class="col-md-8">
+            <h4 class="heading">{{mars.news_title}} </h4>
+            <p>{{mars.news_p}}</p>
+            
+            <img src={{mars.featured_img_url}} alt="">
+
+          </div>
+
+          <div class="col-md-4">
+              <table>
+                  {{mars.table_html}}
+              </table>
+
+          </div>
+        </div>
+      
+    
+      </div>
     
 </body>
 </html>
