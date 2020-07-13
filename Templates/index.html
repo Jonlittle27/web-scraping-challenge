@@ -16,20 +16,25 @@
         </div>
     
         <!-- Mars Scraped information -->
+             
         <div class="row">
           <div class="col-md-8">
-            <h4 class="heading">{{mars.news_title}} </h4>
-            <p>{{mars.news_p}}</p>
-            
-            <img src={{mars.featured_img_url}} alt="">
-
+            <h4 class="heading">{{mars_data.news_title}} </h4>
+            <p>{{mars_data.news_p}}</p>
           </div>
 
           <div class="col-md-4">
               <table>
-                  {{mars.table_html}}
+                  {{mars_data.mars_facts}}
               </table>
 
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-8">
+            <h5>Featured Image</h5>
+            <img src={{mars_data.featured_img_url}} alt="">
           </div>
         </div>
       
